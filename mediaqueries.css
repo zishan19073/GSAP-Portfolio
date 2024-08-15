@@ -1,0 +1,138 @@
+/* mediaqueries.css */
+
+/* For screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+    .main h1 {
+        font-size: 15vw;
+    }
+
+    .projects h1 {
+        font-size: 12vw;
+    }
+
+    .card {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer h1 {
+        font-size: 12vw;
+    }
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .nav {
+        padding-inline: 10px 40px;
+        padding-block: 50px;
+    }
+
+    .main h1 {
+        font-size: 25vw;
+    }
+
+    .main h2 {
+        font-size: 24px;
+    }
+
+    .card-div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        /* flex-direction: column; */
+        padding: 50px 20px;
+        height: 40%;
+    }
+
+    .name, .connect {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .name {
+        padding-bottom: 30px;
+    }
+
+    .info h2, .contact h2 {
+        text-align: center;
+    }
+
+    .i {
+        justify-content: center;
+    }
+}
+.projectsc {
+    margin-bottom: 50px; /* Adjust this value as needed */
+    height: auto;
+}
+
+/* For screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .projects{
+        height: 50%;
+    }
+
+    .nav i:nth-child(1) {
+        font-size: 45px;
+    }
+
+    .nav i:nth-child(2) {
+        font-size: 30px;
+    }
+
+    .main h1 {
+        font-size: 25vw;
+    }
+
+    .main h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .card {
+        width: 280px;
+        height: auto;
+    }
+
+    .footer h1 {
+        font-size: 18vw;
+    }
+
+.inflx{
+    /* flex-direction: column; */
+}
+.footer h2 {
+    font-size: 18px;
+}.inflx li{
+    font-size: 10px;
+}
+.inflx i{
+    font-size: 15px;
+    margin-right: 0px;
+}
+.info h2{
+  margin-right: 50px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.connect{
+    flex-direction: column;
+}
+.contact h2{
+    font-size: 12px;
+    margin-right: 38px;
+}
+.full{
+    width: 100%;
+    right: -100%;
+}
+}

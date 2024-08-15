@@ -1,0 +1,269 @@
+@font-face {
+    font-family: gilroy;
+    src: url(gilroy/Gilroy-Black.ttf);
+}
+
+* {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    height: 100%;
+    width: 100vw;
+    
+
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.flex {
+    display: flex;
+
+    align-items: center;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.main h1 {
+    font-family: "Modern Antiqua", Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 20vw;
+    color: rgb(255, 255, 255);
+    mix-blend-mode: overlay;
+    /* text-shadow:0 0 10px black; */
+}
+
+.main h2 {
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+    /* mix-blend-mode: overlay; */
+    /* text-shadow:0 0 10px black; */
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    filter: grayscale(100%);
+    z-index: -1;
+}
+
+.nav {
+    /* background-color: red; */
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 30px;
+    position: fixed;
+    z-index: 999;
+}
+
+.nav i {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    mix-blend-mode: overlay;
+    cursor: pointer;
+}
+
+.nav i:nth-child(1) {
+    font-size: 60px;
+
+}
+
+.projects {
+    /* z-index: 11; */
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1;
+    background-position: center;
+    background-size: cover; */
+    background:rgb(0, 0, 0);
+    justify-content: center;
+    color: white;
+    font-family: poppins;
+}
+
+.projects h1 {
+    overflow: hidden;
+    text-transform: uppercase;
+    font-size: 15vw;
+    mix-blend-mode:difference;
+    background: -webkit-linear-gradient(#ffffff, #0000003d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    text-shadow: 1  1 10px black;
+}
+.card{
+    position: relative;
+    width: 390px;
+    height: 380px;
+    margin-bottom: 60px;
+    /* background-color: rgb(255, 0, 0); */
+    border-radius: 5px;
+    transition: ease-in-out 0.3s;
+    overflow: hidden;
+}
+.card:hover{
+    box-shadow: 5px  5px 5px rgb(0, 0, 0);
+}
+.card img{
+    transition: ease-in-out 0.3s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    border-radius: 5px;
+}
+.card img:hover{
+    filter: grayscale(0);
+    transform: scale(1.05);
+}
+.projectsc {
+    width: 100%;
+    height: 200vh;
+    background:rgb(0, 0, 0);
+  flex-direction: column;
+    color: white;
+    font-family: poppins;
+    z-index: 12;
+}
+.card-div{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+.desc{
+    font-family: poppins;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    justify-content: space-between;
+    padding:10px 15px;
+    bottom: 0;
+}
+.card i{
+font-size: 20px;
+color: #000;
+background-color: #ffffff;
+border-radius: 50%;
+padding: 5px;
+box-shadow:0 0 10px #000;
+}
+.card h1{
+    text-shadow:-1px 0 10px #000 ;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer{
+    z-index: 99;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1;
+    background-position: center;
+    background-size: cover; */
+    background:rgb(14, 14, 14);
+    justify-content: space-evenly;
+    color: white;
+    font-family: poppins;
+    position: relative;
+}
+.footer h1{
+    font-size: 15vw;
+    font-family: "Modern Antiqua", Geneva, Tahoma, sans-serif;
+    
+    
+}
+.name{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    padding-left: 10%;
+    padding-top: 8%;
+}
+.connect{
+    font-family: poppins;
+    list-style: none;
+    align-items: flex-end;
+    padding-bottom: 100px;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.i i{
+    font-size: 20px;
+    color: #ffffff;
+    padding-right: 15px;
+    font-weight: 400;
+}
+.contact h2{
+    padding-bottom: 10px;
+    padding-left: 13px;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+.info h2{
+    padding-left: 50px;
+    padding-bottom: 10px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.info li{
+    padding-right: 10px;
+}
+.full{
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    background-color: #00000051;
+    color: white;
+    top: 0;
+    right:-40%;
+    z-index: 1000;
+    backdrop-filter:blur(10px) ;
+    padding: 150px 50px;
+}
+.full h4{
+    font-size:50px;
+    font-weight: 500;
+    font-family: poppins;
+}
+
+.full i{
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    font-size: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
