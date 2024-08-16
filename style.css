@@ -78,6 +78,7 @@ video {
     padding: 30px 30px;
     position: fixed;
     z-index: 999;
+    flex-wrap: wrap;
 }
 
 .nav i {
