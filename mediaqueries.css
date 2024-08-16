@@ -77,6 +77,9 @@
 
 /* For screens smaller than 480px */
 @media screen and (max-width: 480px) {
+    nav{
+        width:50%;
+    }
     .projects{
         height: 50%;
     }
