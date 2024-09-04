@@ -77,20 +77,27 @@
 
 /* For screens smaller than 480px */
 @media screen and (max-width: 480px) {
-    nav{
-        width:400px;
+@media screen and (max-width: 480px) {
+    .nav {
+        padding-inline: 10px;
+        padding-block: 20px;
+        justify-content: space-between; /* Ensure icons are spread evenly */
     }
-    .projects{
-        height: 50%;
-    }
-
+    
     .nav i:nth-child(1) {
-        font-size: 45px;
+        font-size: 40px; /* Adjust icon size */
     }
 
     .nav i:nth-child(2) {
-        font-size: 30px;
+        font-size: 30px; /* Adjust icon size */
     }
+
+    /* Ensure icons don't overflow */
+    .nav i {
+        max-width: 100%;
+        overflow: hidden; /* Prevent icons from overflowing */
+    }
+}
 
     .main h1 {
         font-size: 25vw;
