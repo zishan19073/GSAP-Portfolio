@@ -46,17 +46,42 @@ tl1.from(".full i",{
 
 var tl = gsap.timeline();
 
-tl.from("span",{
-    y:30,
-    opacity:0,
-    duration:1,
-    stagger:0.2
-})
-tl.from("h2",{
-    y:-30,
-    opacity:0,
-    duration:0.4
-})
+function initAnimations() {
+    var screenWidth = window.innerWidth;
+
+    if(screenWidth <= 480) {
+        // Adjust animations for smaller screens
+        tl.from("span",{
+            y:20, // Less movement
+            opacity:0,
+            duration:0.8, // Faster
+            stagger:0.1 // Less delay
+        })
+        .from("h2",{
+            y:-20,
+            opacity:0,
+            duration:0.3
+        });
+    } else {
+        // Default animations for larger screens
+        tl.from("span",{
+            y:30,
+            opacity:0,
+            duration:1,
+            stagger:0.2
+        })
+        .from("h2",{
+            y:-30,
+            opacity:0,
+            duration:0.4
+        });
+    }
+}
+
+// Call this function on page load and on window resize
+initAnimations();
+window.addEventListener('resize', initAnimations);
+
 
 gsap.from(".projects h1",{
     y:-60,
